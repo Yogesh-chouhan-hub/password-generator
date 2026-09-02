@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="password-generator">
+        <header class="header">
+          <h1>Password Generator</h1>
+          <p>Generate a strong and secure password in seconds.</p>
+        </header>
+
+        <div class="password-box">
+          <input
+            type="text"
+            id="password"
+            placeholder="Your password will appear here"
+            readonly
+          />
+
+          <button id="copyBtn" type="button" title="Copy password">Copy</button>
+        </div>
+
+        <div class="option">
+          <div class="option-header">
+            <label for="length">Password Length</label>
+
+            <span id="lengthValue">16</span>
+          </div>
+
+          <input type="range" id="length" min="6" max="32" value="16" />
+        </div>
+
+        <div class="options">
+          <label class="checkbox-option">
+            <input type="checkbox" id="uppercase" checked />
+            <span>Uppercase Letters (A-Z)</span>
+          </label>
+
+          <label class="checkbox-option">
+            <input type="checkbox" id="lowercase" checked />
+            <span>Lowercase Letters (a-z)</span>
+          </label>
+
+          <label class="checkbox-option">
+            <input type="checkbox" id="numbers" checked />
+            <span>Numbers (0-9)</span>
+          </label>
+
+          <label class="checkbox-option">
+            <input type="checkbox" id="symbols" checked />
+            <span>Special Characters (!@#$)</span>
+          </label>
+        </div>
+
+        <button id="generateBtn" class="generate-btn" type="button">
+          Generate Password
+        </button>
+
+        <p id="message" class="message"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
