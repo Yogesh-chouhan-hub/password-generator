@@ -20,7 +20,13 @@ A simple Password Generator web application built using HTML, CSS, and JavaScrip
 - CSS3
 - JavaScript
 
+## Live Demo
+
 ## How to Run
+
+```bash
+https://quiet-cocada-33a8d6.netlify.app
+```
 
 1. Clone the repository:
 
