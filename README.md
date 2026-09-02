@@ -22,11 +22,11 @@ A simple Password Generator web application built using HTML, CSS, and JavaScrip
 
 ## Live Demo
 
-## How to Run
-
 ```bash
 https://quiet-cocada-33a8d6.netlify.app
 ```
+
+## How to Run
 
 1. Clone the repository:
 
