@@ -1,3 +1,5 @@
+const strengthText = document.getElementById("strengthText");
+
 const uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz";
@@ -38,6 +40,7 @@ function getRandomCharacter(characterSet) {
 
 function generatePassword() {
   message.textContent = "";
+  copyBtn.textContent = "Copy";
 
   const length = Number(lengthInput.value);
 
@@ -80,8 +83,7 @@ function generatePassword() {
   if (length < passwordCharacters.length) {
     passwordInput.value = "";
 
-    message.textContent =
-      "Password length is too short for the selected options.";
+    message.textContent = `Please choose a password length of at least ${passwordCharacters.length}.`;
 
     return;
   }
@@ -95,6 +97,8 @@ function generatePassword() {
   const password = passwordCharacters.join("");
 
   passwordInput.value = password;
+
+  updatePasswordStrength(password);
 }
 
 generateButton.addEventListener("click", generatePassword);
@@ -102,7 +106,6 @@ generateButton.addEventListener("click", generatePassword);
 copyBtn.addEventListener("click", async function () {
   const password = passwordInput.value;
 
-  // Check if a password exists
   if (password === "") {
     message.textContent = "Generate a password first.";
 
@@ -116,7 +119,6 @@ copyBtn.addEventListener("click", async function () {
 
     message.textContent = "Password copied to clipboard.";
 
-    // Change button text back after 2 seconds
     setTimeout(function () {
       copyBtn.textContent = "Copy";
 
@@ -126,3 +128,46 @@ copyBtn.addEventListener("click", async function () {
     message.textContent = "Unable to copy password.";
   }
 });
+
+function updatePasswordStrength(password) {
+  strengthText.className = "";
+  if (password === "") {
+    strengthText.textContent = "Not generated";
+
+    return;
+  }
+
+  let score = 0;
+
+  if (password.length >= 8) {
+    score++;
+  }
+
+  if (password.length >= 12) {
+    score++;
+  }
+
+  if (/[a-z]/.test(password)) {
+    score++;
+  }
+
+  if (/[A-Z]/.test(password)) {
+    score++;
+  }
+
+  if (/[0-9]/.test(password)) {
+    score++;
+  }
+
+  if (/[^A-Za-z0-9]/.test(password)) {
+    score++;
+  }
+
+  if (score <= 2) {
+    strengthText.textContent = "Weak";
+  } else if (score <= 4) {
+    strengthText.textContent = "Medium";
+  } else if (score === 5) {
+    strengthText.textContent = "Strong";
+  }
+}

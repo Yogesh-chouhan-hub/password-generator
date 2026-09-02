@@ -1,7 +1,3 @@
-/* ================================
-   RESET & GLOBAL STYLES
-================================ */
-
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +20,6 @@ body {
 }
 
 
-/* ================================
-   MAIN CONTAINER
-================================ */
 
 .container {
     width: 100%;
@@ -34,9 +27,6 @@ body {
 }
 
 
-/* ================================
-   PASSWORD GENERATOR CARD
-================================ */
 
 .password-generator {
     background: #ffffff;
@@ -52,9 +42,6 @@ body {
 }
 
 
-/* ================================
-   HEADER
-================================ */
 
 .header {
     text-align: center;
@@ -79,9 +66,6 @@ body {
 }
 
 
-/* ================================
-   PASSWORD DISPLAY
-================================ */
 
 .password-box {
     display: flex;
@@ -120,9 +104,6 @@ body {
 }
 
 
-/* ================================
-   COPY BUTTON
-================================ */
 
 #copyBtn {
     border: none;
@@ -151,9 +132,6 @@ body {
 }
 
 
-/* ================================
-   OPTIONS
-================================ */
 
 .option {
     margin-bottom: 25px;
@@ -194,10 +172,6 @@ body {
 }
 
 
-/* ================================
-   RANGE SLIDER
-================================ */
-
 #length {
     width: 100%;
 
@@ -207,9 +181,6 @@ body {
 }
 
 
-/* ================================
-   CHECKBOX OPTIONS
-================================ */
 
 .options {
     display: flex;
@@ -250,9 +221,37 @@ body {
 }
 
 
-/* ================================
-   GENERATE BUTTON
-================================ */
+.strength-section {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+#strengthText {
+    font-weight: 700;
+}
+
+#strengthText.weak {
+    color: #dc2626;
+}
+
+#strengthText.medium {
+    color: #d97706;
+}
+
+#strengthText.strong {
+    color: #16a34a;
+}
 
 .generate-btn {
     width: 100%;
@@ -285,9 +284,6 @@ body {
 }
 
 
-/* ================================
-   MESSAGE
-================================ */
 
 .message {
     min-height: 20px;
@@ -301,10 +297,6 @@ body {
     color: #36a100;
 }
 
-
-/* ================================
-   RESPONSIVE DESIGN
-================================ */
 
 @media (max-width: 600px) {
 
