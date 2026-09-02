@@ -24,6 +24,8 @@ const generateButton = document.getElementById("generateBtn");
 
 const message = document.getElementById("message");
 
+const copyBtn = document.getElementById("copyBtn");
+
 lengthInput.addEventListener("input", function () {
   lengthValue.textContent = lengthInput.value;
 });
@@ -96,3 +98,31 @@ function generatePassword() {
 }
 
 generateButton.addEventListener("click", generatePassword);
+
+copyBtn.addEventListener("click", async function () {
+  const password = passwordInput.value;
+
+  // Check if a password exists
+  if (password === "") {
+    message.textContent = "Generate a password first.";
+
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(password);
+
+    copyBtn.textContent = "Copied!";
+
+    message.textContent = "Password copied to clipboard.";
+
+    // Change button text back after 2 seconds
+    setTimeout(function () {
+      copyBtn.textContent = "Copy";
+
+      message.textContent = "";
+    }, 2000);
+  } catch (error) {
+    message.textContent = "Unable to copy password.";
+  }
+});
