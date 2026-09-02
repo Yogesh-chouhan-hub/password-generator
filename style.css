@@ -68,6 +68,7 @@ body {
     border-radius: 8px;
     background: #f9fafb;
     color: #111827;
+    font-family: monospace;
     font-size: 15px;
     outline: none;
 }
