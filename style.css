@@ -7,15 +7,11 @@
 body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-
     background: #f4f7fb;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 20px;
-
     color: #1f2937;
 }
 
@@ -30,13 +26,9 @@ body {
 
 .password-generator {
     background: #ffffff;
-
     width: 100%;
-
     padding: 35px;
-
     border-radius: 16px;
-
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -45,23 +37,18 @@ body {
 
 .header {
     text-align: center;
-
     margin-bottom: 30px;
 }
 
 .header h1 {
     font-size: 30px;
-
     margin-bottom: 10px;
-
     color: #111827;
 }
 
 .header p {
     font-size: 15px;
-
     line-height: 1.5;
-
     color: #6b7280;
 }
 
@@ -69,29 +56,19 @@ body {
 
 .password-box {
     display: flex;
-
     gap: 10px;
-
     margin-bottom: 30px;
 }
 
 .password-box input {
     flex: 1;
-
     min-width: 0;
-
     padding: 14px;
-
     border: 1px solid #d1d5db;
-
     border-radius: 8px;
-
     background: #f9fafb;
-
     color: #111827;
-
     font-size: 15px;
-
     outline: none;
 }
 
@@ -107,19 +84,12 @@ body {
 
 #copyBtn {
     border: none;
-
     padding: 0 18px;
-
     border-radius: 8px;
-
     background: #e5e7eb;
-
     color: #374151;
-
     font-weight: 600;
-
     cursor: pointer;
-
     transition: 0.2s ease;
 }
 
@@ -139,44 +109,31 @@ body {
 
 .option-header {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     margin-bottom: 12px;
 }
 
 .option-header label {
     font-size: 15px;
-
     font-weight: 600;
-
     color: #374151;
 }
 
 #lengthValue {
     min-width: 35px;
-
     text-align: center;
-
     padding: 4px 8px;
-
     border-radius: 6px;
-
     background: #eff6ff;
-
     color: #2563eb;
-
     font-weight: 700;
 }
 
 
 #length {
     width: 100%;
-
     cursor: pointer;
-
     accent-color: #2563eb;
 }
 
@@ -184,35 +141,24 @@ body {
 
 .options {
     display: flex;
-
     flex-direction: column;
-
     gap: 14px;
-
     margin-bottom: 30px;
 }
 
 .checkbox-option {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
     cursor: pointer;
-
     font-size: 14px;
-
     color: #374151;
 }
 
 .checkbox-option input {
     width: 18px;
-
     height: 18px;
-
     cursor: pointer;
-
     accent-color: #2563eb;
 }
 
@@ -223,17 +169,11 @@ body {
 
 .strength-section {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     margin-bottom: 25px;
-
     font-size: 16px;
-
     font-weight: 600;
-
     color: #374151;
 }
 
@@ -255,23 +195,14 @@ body {
 
 .generate-btn {
     width: 100%;
-
     border: none;
-
     padding: 14px 20px;
-
     border-radius: 8px;
-
     background: #2563eb;
-
     color: #ffffff;
-
     font-size: 16px;
-
     font-weight: 600;
-
     cursor: pointer;
-
     transition: 0.2s ease;
 }
 
@@ -287,13 +218,10 @@ body {
 
 .message {
     min-height: 20px;
-
     margin-top: 15px;
-
     text-align: center;
-
+    font-weight: 600;
     font-size: 14px;
-
     color: #36a100;
 }
 
