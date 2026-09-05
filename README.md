@@ -11,7 +11,6 @@ A simple Password Generator web application built using HTML, CSS, and JavaScrip
 - Numbers
 - Special characters
 - Password strength: Weak, Medium, Strong
-- Copy password to clipboard
 - Responsive design
 
 ## Technologies Used

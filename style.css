@@ -15,14 +15,10 @@ body {
     color: #1f2937;
 }
 
-
-
 .container {
     width: 100%;
     max-width: 500px;
 }
-
-
 
 .password-generator {
     background: #ffffff;
@@ -32,8 +28,6 @@ body {
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.08);
 }
-
-
 
 .header {
     text-align: center;
@@ -51,8 +45,6 @@ body {
     line-height: 1.5;
     color: #6b7280;
 }
-
-
 
 .password-box {
     display: flex;
@@ -130,16 +122,11 @@ body {
     color: #2563eb;
     font-weight: 700;
 }
-
-
 #length {
     width: 100%;
     cursor: pointer;
     accent-color: #2563eb;
 }
-
-
-
 .options {
     display: flex;
     flex-direction: column;
@@ -166,8 +153,6 @@ body {
 .checkbox-option:hover span {
     color: #111827;
 }
-
-
 .strength-section {
     display: flex;
     justify-content: space-between;
